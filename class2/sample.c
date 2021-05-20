@@ -26,8 +26,8 @@ int main() {
     double* c = (double*)malloc(n * n * sizeof(double)); // Matrix C
 
 
-    double min_time = 0;
-    for(int k=0; k<10; k++) {
+    double m_time = 0;
+    for(int l=0; l<10; l++) {
     
       // Initialize the matrices to some values.
       int i, j;
@@ -53,10 +53,10 @@ int main() {
       }
 
       double end = get_time();
-      min_time += end - begin;
+      m_time += end - begin;
     }
 
-    fprintf(fp, "%d %.6lf\n", n, min_time / 10);
+    fprintf(fp, "%d %.6lf\n", n, m_time / 10);
     free(a);
     free(b);
     free(c);
