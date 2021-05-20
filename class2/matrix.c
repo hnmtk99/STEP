@@ -40,7 +40,6 @@ int main(int argc, char** argv)
       for (k = 0; k < n; k++) {
         c[i * n + j] += a[i * n + k] * b[k * n + j];
       }
-      //printf("%f\n", c[i * n + j]);
     }
   }
 
@@ -52,7 +51,7 @@ int main(int argc, char** argv)
   for (i = 0; i < n; i++) {
     for (j = 0; j < n; j++) {
       sum += c[i * n + j];
-      //printf("c[%d][%d]=%lf\n", i, j, c[i * n + j]);
+      printf("c[%d][%d]=%lf\n", i, j, c[i * n + j]);
     }
   }
   // Print out the sum of all values in C.
