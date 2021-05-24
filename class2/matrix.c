@@ -25,6 +25,9 @@ int main(int argc, char** argv)
   int i, j;
   for (i = 0; i < n; i++) {
     for (j = 0; j < n; j++) {
+      # ALEX_COMMENT:  what advantage do you get from using a flat array?  a[],
+      #                versus an array of arrays   a[][] ?
+      #               And what are the trade-offs ?
       a[i * n + j] = i * n + j; // A[i][j]
       b[i * n + j] = j * n + i; // B[i][j]
       c[i * n + j] = 0; // C[i][j]
