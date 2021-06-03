@@ -1,3 +1,4 @@
+# ALEX COMMENT:  test pull request - please merge
 # pages と links を作成
 def read_fdata(pages, links, size):
   with open('data/pages{}.txt'.format(size)) as f:
