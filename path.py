@@ -45,6 +45,11 @@ def bfs(pages, links, start, goal):
 
     if current == goal:
       break
+      
+    #ALEX_COMMENT:  the code below searches the same dictionary twice, unnecessarily
+    #        search 1:  current in links
+    #        search 2:    links[current]
+    #         you can avoid that with      temp = links.get(current)
     elif current in links:
       for n_node in list(links[current]):
         que.append(n_node) # startから直に進めるノードをqueに追加
@@ -59,6 +64,7 @@ def print_path(path, pages, start, goal):
   tmp = goal
   route = [pages[goal]]
   while path[tmp] != start:
+    #ALEX_COMMENT:  code below also searches twice -  path[tmp]
     route.insert(0,pages[path[tmp]])
     tmp = path[tmp]
   route.insert(0,pages[path[tmp]])
