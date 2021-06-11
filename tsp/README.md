@@ -7,6 +7,7 @@ Originally By: Hayato Ito (hayato@google.com)
 ```
 python myoutput_generator.py
 ```
+my_outputフォルダにgreedy2opt_x.csvが作られる。
 
 ## スコア確認方法
 ```
