@@ -3,8 +3,6 @@
 Originally By: Hayato Ito (hayato@google.com)  
 2020, 2021 Versions By: Hugh O'Cinneide (hughoc@google.com)  
 
-Answered By: Hina Moteki 
-
 ## 実行方法
 ```
 python myoutput_generator.py
