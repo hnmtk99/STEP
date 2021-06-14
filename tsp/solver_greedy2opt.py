@@ -5,6 +5,7 @@ import math
 
 from common import get_tour_length, print_tour, read_input
 
+# ALEX_COMMENT:  swap_path is really nice - but why is it not called in this program?
 # AB+CD よりも AC+BD の方が短ければ交換
 def swap_path(tour,i, j, dist):
     N = len(tour)
