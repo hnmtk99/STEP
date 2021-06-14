@@ -45,6 +45,8 @@ def solve(cities):
     #if N >= 2048:
         #start_points = [random.randint(0, N-1)]
 
+    # ALEX_COMMENT:  the loop below is N * the greedy. 
+    #                thats very expensive - even though it may be precise
     # スタート地点を変えて実行
     for i in range(N):
         tours.append(solve_each(dist, i))
