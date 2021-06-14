@@ -16,6 +16,8 @@ def solve(cities):
     dist = [[0] * N for i in range(N)]
     for i in range(N):
         for j in range(i, N):
+            # ALEX_COMMENT:  when i == j,  that is a special case, which could be handled
+            #                in the next outer loop
             dist[i][j] = dist[j][i] = distance(cities[i], cities[j])
 
     current_city = 0
@@ -23,6 +25,10 @@ def solve(cities):
     tour = [current_city]
 
     while unvisited_cities:
+        # ALEX_COMMENT:  can greedy get faster by sorting the inner arrays?
+        #                if they were sorted, you just need to pick the 1st unvisited city
+        #                from each list each time...  food for thought.
+        #                 (this creates other costs)
         next_city = min(unvisited_cities,
                         key=lambda city: dist[current_city][city])
         unvisited_cities.remove(next_city)
