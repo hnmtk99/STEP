@@ -4,8 +4,6 @@
 - 講義で説明された、Linked listの実装がsimple_malloc.cにある
 - simple_malloc.cの実行結果
 ```
-% make run
-./malloc_challenge.bin
 Challenge 1: simple malloc => my malloc
 Time: 11 ms => 821 ms
 Utilization: 70% => 3%
@@ -28,4 +26,26 @@ Utilization: 15% => 16%
 ==================================
 ```
 
-### First Fit -> Best Fit
+### Best Fit　実行結果
+```
+Challenge 1: simple malloc => my malloc
+Time: 11 ms => 1533 ms
+Utilization: 70% => 70%
+==================================
+Challenge 2: simple malloc => my malloc
+Time: 6 ms => 536 ms
+Utilization: 40% => 40%
+==================================
+Challenge 3: simple malloc => my malloc
+Time: 138 ms => 847 ms
+Utilization: 8% => 50%
+==================================
+Challenge 4: simple malloc => my malloc
+Time: 42407 ms => 9131 ms
+Utilization: 15% => 71%
+==================================
+Challenge 5: simple malloc => my malloc
+Time: 29970 ms => 6011 ms
+Utilization: 15% => 74%
+==================================
+```
