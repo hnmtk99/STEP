@@ -26,7 +26,12 @@ Utilization: 15% => 16%
 ==================================
 ```
 
-### Best Fit　実行結果
+### malloc.c(best Fit)
+確保したいサイズより大きい空き領域で、最初に見つけたものをbest_fitに入れる。
+
+その後、より小さくて確保したいサイズより大きい空き領域にbest_fitを更新する。
+
+### 実行結果
 ```
 Challenge 1: simple malloc => my malloc
 Time: 11 ms => 1533 ms
