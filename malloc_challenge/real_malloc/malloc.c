@@ -64,6 +64,9 @@ void *my_malloc(size_t size) {
     if(metadata->size >= size){
       //最初に見つけた領域をbest_fitに入れる
       if(cnt == 0){
+        // ALEX_COMMENT:  this is good, the initialization is done on the first free element.
+        //                however, you pay the cost of this "if" running on every single iteration.
+        //                can you think about a way to remove this initialization from the loop?
         best_fit = metadata;
         best_fit_prev = prev;
         cnt++;
