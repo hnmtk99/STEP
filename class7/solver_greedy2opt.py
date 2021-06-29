@@ -1,3 +1,4 @@
+# class5での同ネームファイルを改善
 # Greedy法 + 2-opt法
 import random
 import sys
