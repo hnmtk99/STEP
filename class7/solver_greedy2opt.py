@@ -56,7 +56,7 @@ def solve(cities):
         for j in range(i, N):
             dist[i][j] = dist[j][i] = distance(cities[i], cities[j])
             
-    # challenge6: ランダムに選んだ1点で実行
+    # challenge6, 7: ランダムに選んだ1点で実行
     if N >= 2048:
         start_points = [random.randint(0, N-1)]
 
